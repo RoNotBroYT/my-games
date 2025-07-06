@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Games</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(135deg, #000 60%, #00eaff 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+    .container {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 32px #00eaff44;
+    }
+    h1 {
+      color: #00eaff;
+      margin-bottom: 32px;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+    .game-btn {
+      display: block;
+      width: 260px;
+      margin: 18px auto;
+      padding: 18px 0;
+      font-size: 1.2rem;
+      color: #00eaff;
+      background: #111;
+      border: 2px solid #00eaff;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 
+        background 0.2s,
+        color 0.2s,
+        transform 0.15s,
+        box-shadow 0.2s;
+      box-shadow: 0 0 16px 0 #00eaff22;
+    }
+    .game-btn:hover, .game-btn:focus {
+      background: #00eaff;
+      color: #111;
+      transform: translateY(-4px) scale(1.04);
+      box-shadow: 0 4px 32px 0 #00eaff88;
+    }
+    @media (max-width: 500px) {
+      .container {
+        padding: 18px 4vw;
+      }
+      .game-btn {
+        width: 90vw;
+        min-width: 0;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Games so far</h1>
+    <a class="game-btn" href="https://cookie-flax.vercel.app" target="_blank" rel="noopener noreferrer">
+      🍪 Cookie Clicker Game
+    </a>
+    <a class="game-btn" href="https://ping-pong-game-pi-seven.vercel.app" target="_blank" rel="noopener noreferrer">
+      🏓 Ping Pong Game
+    </a>
+  </div>
+</body>
+</html>
